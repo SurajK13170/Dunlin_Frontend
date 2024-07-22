@@ -28,7 +28,7 @@ function Register() {
       const data = await res.json();
       if (res.ok) {
         setSuccess('Registered successfully!');
-        // Redirect or perform further actions here
+         window.location.href = '/login';
       } else {
         setError(data.error || 'Error registering. Please try again.');
       }
